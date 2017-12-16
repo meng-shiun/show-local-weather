@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   // Fetch OpenWeatherMap API
   function getWeather(lat, lon) {
-    let url = `http://openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=b6907d289e10d714a6e88b30761fae22`;
+    let url = `https://openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=b6907d289e10d714a6e88b30761fae22`;
 
     $.ajax({
       url: url,

@@ -1,0 +1,86 @@
+html, body {
+  background: #282625;
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  opacity: 0.08;
+  background-size: cover;
+}
+
+body {
+  background-color: rgba(86, 82, 79, 0.2);
+}
+
+a {
+  color: #ddd;
+}
+
+a:active, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.active {
+  color: #fff;
+}
+
+.weatherCard {
+  margin-top: 20vh;
+  padding-top: 2em;
+}
+
+.unit {
+  color: #444;
+  cursor: pointer;
+}
+
+#weather-icon {
+  display: none;
+  height: 20em;
+  width: auto;
+}
+
+.info {
+  padding: 1.6em 0;
+  font-size: 2em;
+}
+
+#city {
+  font-weight: 600;
+  color: #ddd;
+}
+
+#date {
+  font-size: 0.7em;
+  margin-top: -6em;
+  color: #aaa;
+}
+
+#temp {
+  font-size: 2em;
+  font-weight: 600;
+  color: #ccc;
+  margin-right: -10%;
+}
+
+#des {
+  font-size: 0.8em;
+}
+
+.artist {
+  color: #888;
+  padding-bottom: 2em;
+}
+
+#time {
+  font-size: 2em;
+  color: #555;
+}

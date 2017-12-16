@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Show the Local Weather - MS</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+  rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+  crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <div class="container">
+
+    <!-- image for weather icon according -->
+    <div class="row weatherCard">
+      <div class="col col-sm-6 icon text-right">
+        <img id="weather-icon" src="images/icons/03d.svg" alt="icon.svg">
+      </div>
+
+      <div class="col col-sm-6 info">
+        <div class="col">
+          <!-- City -->
+          <span id="city"></span>
+        </div>
+        <div class="col">
+          <!-- Date -->
+          <span id="date"></span>
+        </div>
+        <div class="col">
+          <div class="row">
+            <!-- Temperature -->
+            <div class="col text-center" id="temp"></div>
+            <div class="col unit">
+              <span class="celcius active">°C</span>
+              |
+              <span class="fahrenheit">℉</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Description -->
+          <span id="des"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+        <!-- Time -->
+        <span id="time"></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col artist text-center mt-5">
+        Icons by <a href="https://erikflowers.github.io/weather-icons/" target="blank">Erik Flowers</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+  integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+  crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+  integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+  crossorigin="anonymous"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>

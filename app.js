@@ -9,6 +9,8 @@ $(document).ready(function() {
         let longitude = position.coords.longitude;
         getWeather(latitude, longitude);
       });
+    } else {
+      console.log("Geolocation is not supported by this browser.");
     }
   }
 
@@ -18,7 +20,6 @@ $(document).ready(function() {
 
     $.ajax({
       url: url,
-      method: 'GET',
       dataType: 'jsonp',
       success: function(data) {
         let city = `${data.name}, ${data.sys.country}`;
@@ -32,18 +33,18 @@ $(document).ready(function() {
         let bgImg = `images/bg/${bgID}.jpg`;
 
         $('#city').text(city);
-        $('#temp').html(Math.floor(temp));
+        $('#temp').html(Math.round(temp));
         $('#des').html(des);
         $('#weather-icon').attr('src', iconImg).css('display', 'inline-block');
 
         // Display celcius or fahrenheit
         $('.unit').on('click', 'span', function() {
           if ($(this).hasClass('celcius')) {
-            $(this).parents().find('#temp').html(Math.floor(temp));
+            $(this).parents().find('#temp').html(Math.round(temp));
             $(this).addClass('active');
             $('.fahrenheit').removeClass('active');
           } else {
-            $(this).parents().find('#temp').html(Math.floor(tempF));
+            $(this).parents().find('#temp').html(Math.round(tempF));
             $(this).addClass('active');
             $('.celcius').removeClass('active');
           }
